@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- JavaScript can change HTML content. -->
+    <h4 id="demo">JavaScript can change HTML content.</h4>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello Javascripts' ">Click Me</button>
+    <br>
+
+    <!-- JavaScript can change HTML attribute values -->
+    <h4>JavaScript can change HTML attribute values.</h4>
+    <button type="button" onclick="document.getElementById('myImage').src='img/js.png'">Click to change</button>
+    <img id="myImage" src="img/python3.jpg" alt="Oops" width="300" height="200">
+    <button type="button" onclick="document.getElementById('myImage').src='img/python3.jpg'">Click Me to Back</button>
+    <br>
+
+    <!-- JavaScript Can Change HTML Styles (CSS) -->
+    <p id="demo2">JavaScript Can Change HTML Styles (CSS)</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+    <br>
+
+    <h3>JavaScript Can Hide HTML Elements</h3>
+    <p id="demo3">Hide Me</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display ='none'">Hide Me</button>
+    <button type="button" onclick="document.getElementById('demo3').style.display ='block'">Show Me</button>
+    <br>
+
+    <!-- JavaScript Where To -->
+    <p id="demo4"></p>
+    <script>
+        document.getElementById("demo4").innerHTML = "JavaScript Where To";
+    </script>
+
+</body>
+</html>
