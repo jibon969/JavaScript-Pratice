@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Statement</title>
+</head>
+<body>
+    
+    <!-- JavaScript Statements -->
+    <h2>JavaScript Statements</h2>
+
+    <script>
+        // Example
+        let x, y, z;    // Statement 1
+        x = 5;          // Statement 2
+        y = 6;          // Statement 3
+        z = x + y;      // Statement 4
+        document.write(z);
+
+    </script>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World !";
+    </script>
+
+    <!-- Semicolons ; -->
+    <h3>Semicolons ;</h3>
+    <p id="value"></p>
+    <script>
+        var a, b, c;
+        a = 5;
+        b = 6;
+        c = a + b;
+        document.getElementById("value").innerHTML = c;
+    </script>
+
+    <!-- multiple statements -->
+    <h4>Multiple statements</h4>
+    <script>
+        var a = 5; b = 6; c = a + b;
+        console.log(c);
+        document.write(c);
+    </script>
+
+    <h4>JavaScript White Space</h4>
+    <script>
+        let name = "Jibon";
+        let age = 20;
+        document.write(name);
+    </script>
+
+    <!-- JavaScript Code Blocks -->
+    <h4>JavaScript Code Blocks</h4>
+    <p id="one"></p>
+    <p id="two"></p>
+    <script>
+        function myFunction(){
+            document.getElementById("one").innerHTML = "Hi";
+            document.getElementById("two").innerHTML = "Learning Javascripts";
+        }
+    </script>
+    <!-- Calling Function -->
+    <button type="button" onclick="myFunction()">Click Me</button>
+
+    <!-- JavaScript Keywords -->
+
+    <script>
+        /*
+        Keyword	        Description
+        var	            Declares a variable
+        let	            Declares a block variable
+        const	        Declares a block constant
+        if	            Marks a block of statements to be executed on a condition
+        switch	        Marks a block of statements to be executed in different cases
+        for	            Marks a block of statements to be executed in a loop
+        function	    Declares a function
+        return	        Exits a function
+        try	Implements error handling to a block of statements
+        */
+    </script>
+
+</body>
+</html>
