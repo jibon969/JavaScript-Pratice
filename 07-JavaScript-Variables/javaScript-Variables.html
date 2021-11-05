@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+<body>
+    
+    <p id="demo"></p>
+    <script>
+        
+        // JavaScript Identifiers
+
+        /*
+            All JavaScript variables must be identified with unique names.
+
+            These unique names are called identifiers.
+
+            Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+
+            The general rules for constructing names for variables (unique identifiers) are:
+
+            Names can contain letters, digits, underscores, and dollar signs.
+            Names must begin with a letter
+            Names can also begin with $ and _ (but we will not use it in this tutorial)
+            Names are case sensitive (y and Y are different variables)
+            Reserved words (like JavaScript keywords) cannot be used as names
+        */
+
+        var pi = 3.14;
+        var person = "Jibon Ahmed";
+        var answer = 'Yes I am!';
+        document.getElementById("demo").innerHTML = pi + "<br>" + person + "<br>" + answer;
+
+        // Declaring (Creating) JavaScript Variables
+        var name; // technically it has the value of undefined
+        name = 'Jibon Ahmed'
+        document.write(name);
+        document.write("<br>"); // new line
+        
+
+        // One Statement, Many Variables
+        var person = "Jibon", age = "27", status = "Single";
+        document.write(person);
+         document.write("<br>");
+        document.write(age);
+        document.write("<br>");
+        document.write(status);
+        document.write("<br>");
+       
+
+        // Re-Declaring JavaScript Variables
+        var x = 5;
+        var x;
+        document.write(x);
+        document.write("<br>");
+        
+        /*
+        JavaScript Dollar Sign $
+        Remember that JavaScript identifiers (names) must begin with:
+
+        A letter (A-Z or a-z)
+        A dollar sign ($)
+        Or an underscore (_)
+        Since JavaScript treats a dollar sign as a letter, identifiers containing $ are valid variable names:
+        */
+       var $ = 4;
+       document.write($)
+    </script>
+</body>
+</html>
