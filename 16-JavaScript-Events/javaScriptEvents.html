@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+</head>
+<body>
+    <!--
+        HTML Events
+
+            An HTML event can be something the browser does, or something a user does.
+            Here are some examples of HTML events:
+            
+            An HTML web page has finished loading
+            An HTML input field was changed
+            An HTML button was clicked
+        -->
+
+        <h3>Example</h3>
+        <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button>
+        <p id="demo"></p>
+
+        <!-- Example -->
+        <h4>JavaScript HTML Events</h4>
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+        <br>
+        
+        <!-- Example -->
+        <button id="demo2" onclick="displayDate()">Click me</button>
+
+        <script>
+            function displayDate(){
+                document.getElementById("demo2").innerHTML = Date();
+            }
+        </script>
+
+
+</body>
+</html>
