@@ -17,7 +17,6 @@ console.log("\n");
 
 
 // A method is a function stored as a property.
-
 var student = {
     firstName: "Jayed",
     lastName: "Hossain",
