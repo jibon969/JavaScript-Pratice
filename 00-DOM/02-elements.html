@@ -11,10 +11,16 @@
     <main>
         <h3>Hello Dom</h3>
         <p id="first">My First Paragraph</p>
+        <p id="second">Second Paragraph</p>
     </main>
     <script>
         document.getElementById('first').style.color = "red";
-        console.log(document.getElementsByTagName('main'))
+        // console.log(document.getElementsByTagName('main'))
+        var second = document.getElementById('second');
+        second.style.backgroundColor = "black";
+        second.style.color = "white";
+        second.style.padding = "10px";
+        second.style.textAlign = "center"
     </script>
 </body>
 </html>
