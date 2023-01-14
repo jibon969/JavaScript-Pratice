@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change innerHTML</title>
+    <style>
+        article{
+            border: 2px solid tomato;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>  
+        <section>
+            <h3>Exploring DOM</h3>
+            <article>
+                <h3>article-1</h3>
+                <p class="author">author-1</p>
+                <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam vel nostrum illum. Expedita error odit sint nostrum, necessitatibus harum molestias. Laborum deserunt illo voluptatem nostrum iure quasi perferendis similique ut.</p>
+            </article>
+            <article>
+                <h3>article-2</h3>
+                <p class="author">author-2</p>
+                <p class="description">Sunt, vitae. Velit esse soluta, distinctio quaerat veniam eum temporibus? Obcaecati perferendis est quisquam autem beatae. Aliquam quaerat ad fuga quisquam? Suscipit labore odio magni corporis beatae recusandae veritatis facere.</p>
+            </article>
+            <article>
+                <h3>article-3</h3>
+                <p class="author">author-3</p>
+                <p class="description">Ab iste aliquam quisquam earum, unde non voluptate incidunt voluptatibus perspiciatis at ea atque assumenda quaerat. Minus cum laboriosam corporis saepe eum, veniam veritatis quia voluptatibus, unde, laudantium quod sint.</p>
+            </article>
+        </section>
+    </main>
+    <script>
+        var author = document.getElementsByClassName("author");
+        // console.log(author)
+        for(var i=0; i < author.length; i++){
+            var element = author[i]
+            console.log(element)
+            element.style.fontSize = "36px";
+            element.style.color = "red";
+            console.log(element.innerHTML);
+            element.innerHTML = "Lekhok - " + i;
+        }
+    </script>
+</body>
+</html>
